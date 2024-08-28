@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+    <title>Parking</title>
+</head>
+<body>
+    <button type="button" class="btn btn-primary" onclick="mostrarTabla1()">PRIMERA PLANTA</button>
+    <button type="button" class="btn btn-danger" onclick="mostrarTabla2()">SEGUNDA PLANTA</button>
+    <button type="button" class="btn btn-info" onclick="obtenerDetallesCompra()">LISTA/GANANCIAS</button>
+    <button type="button" class="btn btn-warning"  id="inicializar">SIMULACION</button>
+    <button type="button" class="btn btn-warning" id="detener">DETENER SIMULACION</button>
+
+    <div class="container text-center mt-5" id="tablaPlanta1" style="display: none;">
+        <h1>PLANTA 1</h1>
+        <table class="table table-bordered mt-5">
+            <tr>
+                <td id="spot1">Plaza 1</td>
+                <td id="spot2">Plaza 2</td>
+                <td id="spot3">Plaza 3</td>
+                <td id="spot4">Plaza 4</td>
+                <td id="spot5">Plaza 5</td>
+            </tr>
+            <tr>
+                <td id="spot6">Plaza 6</td>
+                <td id="spot7">Plaza 7</td>
+                <td id="spot8">Plaza 8</td>
+                <td id="spot9">Plaza 9</td>
+                <td id="spot10">Plaza 10</td>
+            </tr>
+        </table>
+        <button class="btn btn-danger" onclick="ocuparPlaza()">Meter coche</button>
+        <button class="btn btn-success" onclick="sacarCoche()">Sacar coche</button>
+        <button class="btn btn-info" onclick="obtenerDetallesCompra()">Ver detalles de la compra</button>
+
+    </div>
+
+    <div class="container text-center mt-5" id="tablaPlanta2" style="display: none;">
+        <h1>PLANTA 2</h1>
+        <table class="table table-bordered mt-5">
+            <tr>
+                <td id="spot11">Plaza 11</td>
+                <td id="spot12">Plaza 12</td>
+                <td id="spot13">Plaza 13</td>
+                <td id="spot14">Plaza 14</td>
+                <td id="spot15">Plaza 15</td>
+            </tr>
+            <tr>
+                <td id="spot16">Plaza 16</td>
+                <td id="spot17">Plaza 17</td>
+                <td id="spot18">Plaza 18</td>
+                <td id="spot19">Plaza 19</td>
+                <td id="spot20">Plaza 20</td>
+            </tr>
+        </table>
+        <button class="btn btn-danger" onclick="ocuparPlaza()">Meter coche</button>
+        <button class="btn btn-success" onclick="sacarCoche()">Sacar coche</button>
+        <button class="btn btn-info" onclick="obtenerDetallesCompra()">Ver detalles de la compra</button>
+        
+    </div>
+ 
+    <script src="/js/codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
